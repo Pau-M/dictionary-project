@@ -5,9 +5,9 @@ import "./Dictionary.css";
 
 export default function Dictionary() {
   let [keyWord, setKeyWord] = useState("");
-  let [result, setResult] = useState({});
+  let [result, setResult] = useState(null);
   function handleResponse(response) {
-    console.log(response.data[0].meanings[0].definitions[0].definition);
+    setResult(response.data[0]);
   }
   function search(event) {
     event.preventDefault();
