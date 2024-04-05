@@ -1,5 +1,4 @@
 import React from "react";
-import ReactAudioPlayer from "react-audio-player";
 
 export default function Phonetics(props) {
   function handleClick(event) {
@@ -13,9 +12,9 @@ export default function Phonetics(props) {
 
   return (
     <div>
-      <a href="#" onClick={handleClick}>
+      <button className="btn" onClick={handleClick}>
         🔊
-      </a>
+      </button>
       {props.phonetic.text}
     </div>
   );
