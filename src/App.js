@@ -16,7 +16,7 @@ function App() {
         </header>
 
         <main>
-          <Dictionary />
+          <Dictionary defaultWord="wine" />
         </main>
         <hr />
         <footer className="text-center">
