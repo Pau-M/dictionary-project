@@ -1,20 +1,33 @@
 body {
-  background-color: #dfd3c3;
+  background-color: #e9dcbe;
   font-family: "Poppins", sans-serif;
 }
 
 .container {
   width: 70%;
-  background-color: #f6e5e5;
-  margin: 100px auto;
+  margin: 40px auto;
   padding: 50px 90px;
 }
-
-.app-icon {
-  width: 100px;
-  margin: 0 auto;
+.App-header {
+  background-image: url("dict-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+  color: #e9dcbe;
 }
-
+.App-header h1 {
+  font-weight: bolder;
+}
 footer {
   font-size: 12px;
+}
+@media (max-width: 900px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 10px;
+  }
+  .App-header {
+    padding: 50px 20px 50px 30px;
+  }
 }

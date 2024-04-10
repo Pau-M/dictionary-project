@@ -2,4 +2,30 @@
   padding: 6px 12px;
   margin-right: 5px;
   border: 0px;
+  line-height: 3;
+  width: 80%;
+}
+.button-submit {
+  color: #343434;
+  background-color: #8e8b82;
+  font-weight: bold;
+  line-height: 3;
+  padding: 6px 12px;
+  width: 18%;
+}
+.button-submit:hover {
+  background-color: #343434;
+  color: #f3f3f3;
+  transition: all 200ms ease-in-out;
+}
+
+@media (max-width: 900px) {
+  .search-input {
+    padding: 3px 5px;
+    width: 70%;
+  }
+  .button-submit {
+    padding: 3px 5px;
+    width: 25%;
+  }
 }

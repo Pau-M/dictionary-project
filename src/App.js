@@ -1,22 +1,16 @@
 import "./App.css";
 import Dictionary from "./Dictionary";
-import icon from "./book-icon.png";
 
 function App() {
   return (
     <div className="App">
-      <div className="container rounded shadow">
-        <header className="App-header text-center mb-5">
-          <img
-            src={icon}
-            className="app-icon img-fluid"
-            alt="dictionary-icon"
-          />
-          <h1>Dictionary Project</h1>
+      <div className="container">
+        <header className="App-header rounded shadow mb-5">
+          <h1>Dictionary</h1>
+          <h2>What word do you want to look up?</h2>
         </header>
-
         <main>
-          <Dictionary defaultWord="wine" />
+          <Dictionary defaultWord="aurora" />
         </main>
         <hr />
         <footer className="text-center">

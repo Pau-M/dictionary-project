@@ -1,0 +1,14 @@
+.Phonetic .btn {
+  font-size: 14px;
+  color: transparent;
+  text-shadow: 0 0 0 #202020;
+  background-color: #8e8b82;
+  border-radius: 20px;
+  margin: 10px;
+}
+.Phonetic p {
+  display: inline;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.8;
+}

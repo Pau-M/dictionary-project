@@ -1,3 +1,17 @@
-.content {
-  background-color: #fff;
+.Meaning {
+  padding: 35px;
+}
+.Meaning h3 {
+  font-weight: 500;
+}
+.Meaning p {
+  line-height: 2;
+}
+@media (max-width: 900px) {
+  .Meaning {
+    padding: 20px;
+  }
+  .Meaning p {
+    font-size: 14px;
+  }
 }

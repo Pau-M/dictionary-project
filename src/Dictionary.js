@@ -40,22 +40,31 @@ export default function Dictionary(props) {
   if (loaded) {
     return (
       <div className="dictionary">
-        <form
-          className="d-flex align-items-center justify-content-center m-5"
-          onSubmit={handleSubmit}
-        >
-          <input
-            type="search"
-            className="search-input rounded w-50"
-            onChange={keyWordChange}
-            autoFocus={true}
-            defaultValue={props.defaultWord}
-            placeholder="Type a word..."
-          />
-          <input type="submit" className="btn btn-dark" value="Search" />
-        </form>
+        <section>
+          <form
+            className="d-flexjustify-content-center mt-5"
+            onSubmit={handleSubmit}
+          >
+            <input
+              type="search"
+              className="search-input rounded"
+              onChange={keyWordChange}
+              autoFocus={true}
+              defaultValue={props.defaultWord}
+              placeholder="Type a word..."
+            />
+            <input
+              type="submit"
+              className="button-submit btn shadow"
+              value="Search"
+            />
+          </form>
+          <small>E.g. cat, rice, unique</small>
+        </section>
         <Results result={result} />
-        <Pictures photo={photo} />
+        <section>
+          <Pictures photo={photo} />
+        </section>
       </div>
     );
   } else {
