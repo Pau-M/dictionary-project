@@ -9,27 +9,29 @@ function App() {
           <h1>Dictionary</h1>
           <h2>What word do you want to look up?</h2>
         </header>
-        <main>
+        <main className="mb-5">
           <Dictionary defaultWord="aurora" />
         </main>
         <hr />
         <footer className="text-center">
-          Dictionary Project coded by PM open-sourced on
-          <a
-            href="https://github.com/Pau-M/dictionary-project"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>{" "}
-          and hosted on
-          <a
-            href="https://dictionary-project-pau.netlify.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Netlify
-          </a>
+          <p>
+            Dictionary Project coded by PM. Open-sourced on{" "}
+            <a
+              href="https://github.com/Pau-M/dictionary-project"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>{" "}
+            and hosted on{" "}
+            <a
+              href="https://dictionary-project-pau.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Netlify
+            </a>
+          </p>
         </footer>
       </div>
     </div>
